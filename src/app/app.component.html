@@ -1,0 +1,53 @@
+<div class="navbar">
+    <img src="../assets/momohouseyellow.png" class="logo">
+    <ul>
+        <li class="nav-item" *ngFor="let tabItem of tabList" >
+            <a class="nav-link" (click)="navigateTo(tabItem)" href="#">{{tabItem}}</a></li>
+    </ul>
+</div>
+
+<div class="centerDiv">
+<ng-container *ngIf="!selectedTab || selectedTab === 'Home' ">
+    <!--<div class="cardholder molly">
+        <div class="cardleft molly menuimage">
+            &nbsp;
+        </div>
+        <div class="cardright molly">
+            asd
+        </div>
+    </div>-->
+    <div class="centerDiv polaroid">
+        <img src="../assets/colorfulmomos.jpg" alt="5 Terre" style="width:100%">
+        <div class="containerp">
+            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Colorful momo</p>
+            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
+        </div>
+    </div>
+    <div class="centerDiv polaroid">
+        <img src="../assets/jholmomo.webp" alt="5 Terre" style="width:100%">
+        <div class="containerp">
+            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Jhol momo</p>
+            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
+        </div>
+    </div>
+    <div class="centerDiv polaroid">
+        <img src="../assets/steammomo.jpg" alt="5 Terre" style="width:100%">
+        <div class="containerp">
+            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Colorful momo</p>
+            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="selectedTab === 'Contact' ">
+    <div class="centerDiv polaroid">
+      <p> Dechhen Lama</p>
+      <p>+91231232312</p>
+    </div>
+</ng-container>
+<ng-container *ngIf="selectedTab === 'Gallery' ">
+    <h1>Gallery Content</h1>
+</ng-container>
+<ng-container *ngIf="selectedTab === 'About' ">
+    <h1>About Content</h1>
+</ng-container>
+</div>
