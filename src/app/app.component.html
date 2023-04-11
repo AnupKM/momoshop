@@ -7,47 +7,56 @@
 </div>
 
 <div class="centerDiv">
-<ng-container *ngIf="!selectedTab || selectedTab === 'Home' ">
-    <!--<div class="cardholder molly">
-        <div class="cardleft molly menuimage">
-            &nbsp;
+    <ng-container *ngIf="!selectedTab || selectedTab === 'Home' ">
+        <!--<div class="cardholder molly">
+            <div class="cardleft molly menuimage">
+                &nbsp;
+            </div>
+            <div class="cardright molly">
+                asd
+            </div>
+        </div>-->
+        <div class="centerDiv polaroid">
+            <img src="./assets/colorfulmomos.jpg" alt="5 Terre" style="width:100%">
+            <div class="containerp">
+                <p style="font-weight: bold; text-align: center; font-size: 16pt;">Colorful momo( Veg, Chicken, Beef )</p>
+                <p style="font-style: italic; text-align: center;">
+                    Igredients: maida/All purpose flour, Palak (spinach)puree, Beetroot juice, choice of meat, purple Cabbage, carrot, tricolor capsicum, ginger, green Chilli, salt, pepper, food color
+                </p>
+            </div>
         </div>
-        <div class="cardright molly">
-            asd
+        <div class="centerDiv polaroid">
+            <img src="./assets/jholmomo.webp" alt="5 Terre" style="width:100%">
+            <div class="containerp">
+                <p style="font-weight: bold; text-align: center; font-size: 16pt;">Jhol momo( Veg, Chicken, Beef )</p>
+                <p style="font-style: italic; text-align: center;">
+                    Igredients: toamto, Soyabean, maida/All purpose flour, Palak (spinach)puree, Beetroot juice, choice of meat, purple Cabbage, carrot, tricolor capsicum, ginger, green Chilli, salt, pepper, food color
+                </p>
+            </div>
         </div>
-    </div>-->
-    <div class="centerDiv polaroid">
-        <img src="./assets/colorfulmomos.jpg" alt="5 Terre" style="width:100%">
-        <div class="containerp">
-            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Colorful momo</p>
-            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'Contact' ">
+        <div class="centerDiv polaroid"  style="text-align:center;">
+            <h1>Contact</h1>
+            <p> Dechhen Lama</p>
+            <p>+91231232312</p>
+            <p>Holy Springs, Nort Carolina</p>
         </div>
-    </div>
-    <div class="centerDiv polaroid">
-        <img src="./assets/jholmomo.webp" alt="5 Terre" style="width:100%">
-        <div class="containerp">
-            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Jhol momo</p>
-            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'Gallery' ">
+        <h1 style="text-align:center;">Gallery</h1>
+        <img src="./assets/colorfulmomos.jpg" style="width:100%">
+        <img src="./assets/jholmomo.webp"  style="width:100%">
+        <img src="./assets/mixedmomo.jpg"  style="width:100%">
+        <img src="./assets/steammomo.jpg"  style="width:100%">
+
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'About' ">
+        <div class="centerDiv polaroid" style="text-align:center;">
+            <h1>About</h1>
+            <h3>Hello everyone, I am Dechhen Lama. I make Homemade Momos(frozen) and achar with best ingredients. I have 8+ years of work experience in Gastronomy.
+                I am trying to use my knowledge and experience to do something of my own. You can order through text or call. Special orders can be made as well. Just call.
+            Thank you.</h3>
         </div>
-    </div>
-    <div class="centerDiv polaroid">
-        <img src="./assets/steammomo.jpg" alt="5 Terre" style="width:100%">
-        <div class="containerp">
-            <p style="font-weight: bold; text-align: center; font-size: 16pt;">Colorful momo</p>
-            <p style="font-style: italic; text-align: center;">Igredients: Salt,asd asdasd asdsa dsad sa</p>
-        </div>
-    </div>
-</ng-container>
-<ng-container *ngIf="selectedTab === 'Contact' ">
-    <div class="centerDiv polaroid">
-      <p> Dechhen Lama</p>
-      <p>+91231232312</p>
-    </div>
-</ng-container>
-<ng-container *ngIf="selectedTab === 'Gallery' ">
-    <h1>Gallery Content</h1>
-</ng-container>
-<ng-container *ngIf="selectedTab === 'About' ">
-    <h1>About Content</h1>
-</ng-container>
+    </ng-container>
 </div>
